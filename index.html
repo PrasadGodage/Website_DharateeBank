@@ -74,11 +74,11 @@
 	  </nav>
     <!-- END nav -->
     
-    <div class="hero-wrap js-fullheight" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+    <div class="hero-wrap js-fullheight" style="background-image: url('images/db1.png');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
-          <div class="col-md-6 ftco-animate">
+          <div class="col-md-7 ftco-animate">
           	<h2 class="subheading">Welcome to Dharatee shetkari</h2>
           	<h1>Dharatee shetkari for everyone </h1>
             <!-- <p class="mb-4">Let us work on your yard</p> -->
@@ -91,15 +91,15 @@
     <section class="ftco-section ftco-no-pt">
     	<div class="container">
     		<div class="row">
-    			<div class="col-lg-3 py-5 order-md-last">
+    			<div class="col-lg-4 py-5 order-md-last">
 	          <div class="heading-section ftco-animate">
 	          	<span class="subheading">Services</span>
-	            <h2 class="mb-4">Dharatee shetkari Services</h2>
+	            <h2 class="mb-4">Dharatee Shetkari Services</h2>
 	            <p>Connecting farmers to global markets, we specialize in the import and export of premium dry fruits, seeds, and dried vegetables, ensuring your agricultural products reach the world</p>
 	            <!-- <p><a href="#" class="btn btn-primary py-3 px-4">Get a Quote</a></p> -->
 	          </div>
     			</div>
-    			<div class="col-lg-9 services-wrap px-4 pt-5">
+    			<div class="col-lg-8 services-wrap px-4 pt-5">
     				<div class="row pt-md-3">
     					<div class="col-md-6 d-flex align-items-stretch">
 		    				<div class="services text-center">
@@ -147,7 +147,7 @@
     	<div class="container">
     		<div class="row d-flex">
     			<div class="col-md-6 d-flex">
-    				<div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-end" style="background-image:url(images/about.jpg);">
+    				<div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-end" style="background-image:url(images/about1.png);">
     					<!-- <a href="https://vimeo.com/45830194" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
     						<span class="icon-play"></span> -->
     					</a>
@@ -254,7 +254,7 @@
                     <div class="d-flex align-items-center">
                     	<div class="user-img" style="background-image: url(images/user.png)"></div>
                     	<div class="pl-3">
-		                    <p class="name">Krishna Dighe</p>
+		                    <p class="name">person_1</p>
 		                    <!-- <span class="position">Marketing Manager</span> -->
 		                  </div>
 	                  </div>
@@ -269,7 +269,7 @@
                     <div class="d-flex align-items-center">
                     	<div class="user-img" style="background-image: url(images/user.png)"></div>
                     	<div class="pl-3">
-		                    <p class="name">Sandip Gaikwad</p>
+		                    <p class="name">person_2</p>
 		                    <!-- <span class="position">Marketing Manager</span> -->
 		                  </div>
 	                  </div>
@@ -283,7 +283,7 @@
                     <div class="d-flex align-items-center">
                     	<div class="user-img" style="background-image: url(images/user.png)"></div>
                     	<div class="pl-3">
-		                    <p class="name">Nitesh Godge</p>
+		                    <p class="name">person_3</p>
 		                    <!-- <span class="position">Marketing Manager</span> -->
 		                  </div>
 	                  </div>
@@ -504,6 +504,24 @@
 
   gtag('config', 'UA-23581568-13');
 </script>
-    
+<script>
+	$('#contact-form').on('submit', function(e) {
+		e.preventDefault();  
+		var fData = new FormData(this);
+		alert(fData);
+		$.ajax({
+			url: 'mail.php',
+			type: 'POST',
+			data: fData,
+			cache: false,
+			contentType: false,
+			processData: false,
+			dataType: 'json',
+			success: function(response) {
+			   alert("Your Response has recorded successfull.")
+			}
+		});
+	});
+</script>
   </body>
 </html>

@@ -308,6 +308,24 @@
 
   gtag('config', 'UA-23581568-13');
 </script>
-    
+<script>
+	$('#contact-form').on('submit', function(e) {
+		e.preventDefault();  
+		var fData = new FormData(this);
+		alert(fData);
+		$.ajax({
+			url: 'mail.php',
+			type: 'POST',
+			data: fData,
+			cache: false,
+			contentType: false,
+			processData: false,
+			dataType: 'json',
+			success: function(response) {
+			   alert("Your Response has recorded successfull.")
+			}
+		});
+	});
+</script>
   </body>
 </html>

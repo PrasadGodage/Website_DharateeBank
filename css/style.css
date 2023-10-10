@@ -8461,7 +8461,7 @@ h1, h2, h3, h4, h5,
     font-size: 18px;
     font-weight: 600; }
   .services .btn-custom {
-    position: absolute;
+    /* position: absolute; */
     bottom: -35px;
     left: 0;
     right: 0;
@@ -8475,7 +8475,7 @@ h1, h2, h3, h4, h5,
     -o-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
+    transition: all 0.s ease; }
     .services .btn-custom span {
       color: #fff; }
   .services:hover .icon {
