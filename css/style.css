@@ -8030,7 +8030,7 @@ h1, h2, h3, h4, h5,
   padding: 0; }
   @media (max-width: 991.98px) {
     .ftco-navbar-light {
-      background: #000000 !important;
+      background: #7A3240 !important;
       position: relative;
       top: 0;
       padding: 10px 15px; } }
@@ -8689,7 +8689,7 @@ textarea.form-control {
   position: relative; }
   @media (max-width: 767.98px) {
     .ftco-section {
-      padding: 6em 0; } }
+      padding: 1em 0; } }
 
 .ftco-bg-dark {
   background: #3c312e; }
