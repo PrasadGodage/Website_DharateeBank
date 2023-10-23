@@ -8703,7 +8703,7 @@ textarea.form-control {
 .ftco-footer {
   font-size: 16px;
   background: #7A3240;
-  padding: 5em 0 3em 0; }
+  padding: 1.5em 0 3em 0; }
   .ftco-footer .logo {
     font-size: 34px !important;
     text-transform: uppercase;
@@ -9076,7 +9076,7 @@ textarea.form-control {
     line-height: 1.5;
     margin-bottom: 15px; }
   .block-23 ul li span {
-    color: rgba(255, 255, 255, 0.7); }
+    color: white; }
   .block-23 ul li .icon, .block-23 ul li .text {
     display: table-cell;
     vertical-align: top; }
